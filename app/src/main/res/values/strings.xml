@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Tarnhelm</string>
+    <string name="app_name">Tarnhelm (Test)</string>
     <string name="app_description">The magic to clean sharing links up.</string>
     <string name="tarnhelm_shortcuts">Process Clipboard</string>
     <string name="copy_label">Tarnhelm Copy</string>

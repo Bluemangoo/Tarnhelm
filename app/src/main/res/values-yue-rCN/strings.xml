@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Tarnhelm</string>
+    <string name="app_name">Tarnhelm (Test)</string>
     <string name="copy_label">Tarnhelm 复制</string>
     <string name="read_only_toast">文本只读</string>
     <string name="rule_added_toast">已经添加咗「%s」</string>

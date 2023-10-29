@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         Date date = new Date()
-        applicationId "cn.ac.lz233.tarnhelm"
+        applicationId "cn.ac.lz233.tarnhelm.test"
         minSdk 27
         targetSdk 34
         versionCode = date.format("yyyyMMdd").toInteger()

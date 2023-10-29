@@ -41,17 +41,17 @@ object SystemUI {
                     //val clipboardManager = context.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
                     val actionContainer = clipboardOverlayController.getObjectField("mActionContainer") as LinearLayout
                     // Android may call setClipData twice
-                    if ((actionContainer[actionContainer.size - 1] as View).contentDescription != "Tarnhelm") {
+                    if ((actionContainer[actionContainer.size - 1] as View).contentDescription != "Tarnhelm (Test)") {
                         val chip = it.thisObject.callMethod(
                             "constructActionChip",
                             RemoteAction(
                                 Icon.createWithResource(BuildConfig.APPLICATION_ID, R.drawable.ic_icon),
                                 "",
-                                "Tarnhelm",
+                                "Tarnhelm (Test)",
                                 PendingIntent.getActivity(context, 1, Intent(context, MainActivity::class.java), PendingIntent.FLAG_IMMUTABLE)
                             )
                         ) as View
-                        chip.contentDescription = "Tarnhelm"
+                        chip.contentDescription = "Tarnhelm (Test)"
                         chip.setOnClickListener {
                             clipboardOverlayController.callMethod("animateOut")
                             context.startActivity(Intent().setClassName(BuildConfig.APPLICATION_ID, ProcessOverlayActivity::class.java.name).apply {
@@ -75,7 +75,7 @@ object SystemUI {
                         RemoteAction(
                             Icon.createWithResource(BuildConfig.APPLICATION_ID, R.drawable.ic_icon),
                             "",
-                            "Tarnhelm",
+                            "Tarnhelm (Test)",
                             PendingIntent.getActivity(
                                 clipboardOverlayView.context,
                                 1,
